@@ -3,7 +3,14 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 #이미지 불러오기#############################################################
-img = cv2.imread('C:/Users/jhm/Desktop/kopo_univ/4_7K.png')
+
+img_arr = ['C:/Users/jhm/Desktop/kopo_univ/1K.png'
+           ,'C:/Users/jhm/Desktop/kopo_univ/1K_2.png'
+           ,'C:/Users/jhm/Desktop/kopo_univ/4_7K.png'
+           ,'C:/Users/jhm/Desktop/kopo_univ/10K.png'
+           ,'C:/Users/jhm/Desktop/kopo_univ/33R.png']
+
+img = cv2.imread(img_arr[0])
 rows, cols, _ = img.shape
 print("rows:",rows), print("cols:",cols) #rows:행 531개 , cols:열 274개
 
